@@ -1,0 +1,63 @@
+body {
+  margin:0;
+  font: 12px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:#f3f2f3;
+  /*为保证效果，让页面出现纵向滚动条*/
+  overflow-y:scroll;
+}
+
+ul,li,ol,p,dl,dt,dd {
+	margin: 0;
+	padding: 0;
+}
+img{border:0; vertical-align: bottom;}
+a,a:link{
+	color:#000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited{
+	color:#bbb;
+}
+.container{
+	margin: 0 auto;
+}
+
+.container ul{
+	position: relative;
+}
+.container ul li {
+	position: absolute;
+	width: 230px;
+	padding: 5px;
+	background-color:#fff;
+	overflow: hidden;
+	border-radius:2px;
+}
+.container ul li p {
+	text-align: center;
+	font-size:14px;
+	margin-top: 10px;
+}
+/*显示loading*/
+.container ul li .default {
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left: -42px;
+	margin-top: -42px;
+	width: 84px;
+	height: 84px;
+}
+.container ul li div{
+	width: 230px;
+}
+.loading{
+	display: none;
+	text-align: center;
+	margin-top: 10px;
+	background-color: #fff;
+}
+
