@@ -254,6 +254,6 @@
     addEvent(window,'load',waterfall.init);
     addEvent(window,'scroll',waterfall.scrollAndLoad);
     addEvent(window,'resize',function() {
-        waitForFinalEvent(waterfall.resizeWindow,150);
+        waitForFinalEvent(waterfall.resizeWindow,500);
     });
 })();
